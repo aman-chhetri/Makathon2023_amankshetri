@@ -9,7 +9,7 @@ def is_prime(n):
 
 # We are creating function to calculate number of valid bracelets of length n
 def count_bracelets(n):
-    arr = [[0, 0] for _ in range(n+1)]
+    arr = [[0, 0] for i in range(n+1)]
     arr[1][0] = arr[1][1] = 1
     for i in range(2, n+1):
         if is_prime(i):
